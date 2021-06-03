@@ -23,5 +23,24 @@ for s in data:
 	if len(s) < 100:
 		small_len.append(s)
 print(len(small_len))
-print(small_len[0])
-print(small_len[1])
+
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print(len(good))
+
+
+#list comprehension 清單快寫法
+
+good_f = [d for d in data if 'good' in d] 
+#清單名=  運算   變數 清單     篩選條件
+#運算d就是append(d)的d，將其裝進good_f,所以如果appen(d)改成append(1),則會有一大堆1寫入
+print(len(good_f))
+
+
+bad_f = ['bad' in d for d in data ] #運算可以有好幾種，像這個範例就是布林值
+
+bad = []
+for d in data"
+	bad.append('bad' in d)
