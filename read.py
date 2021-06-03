@@ -42,5 +42,5 @@ print(len(good_f))
 bad_f = ['bad' in d for d in data ] #運算可以有好幾種，像這個範例就是布林值
 
 bad = []
-for d in data"
+for d in data:
 	bad.append('bad' in d)
