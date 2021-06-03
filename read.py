@@ -17,3 +17,11 @@ sum_len = 0
 for d in data:
 	sum_len += len(d)
 print('average is', sum_len/len(data))
+
+small_len = []
+for s in data:
+	if len(s) < 100:
+		small_len.append(s)
+print(len(small_len))
+print(small_len[0])
+print(small_len[1])
